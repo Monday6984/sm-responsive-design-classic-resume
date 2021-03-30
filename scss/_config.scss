@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$primary-color: #0699A6;
+$accent-color: #9E8C6C;
+$text-color: #000;
+$font-weights: (
+    "regular" : 400,
+    "medium" : 500,
+    "bold" : 700,
+    "bolder" : 900,
+);

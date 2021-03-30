@@ -1,0 +1,9 @@
+@import './config';
+@import './normalize';
+
+body {
+    background-color: #fff;
+    color: $text-color;
+    font-family: PT Sans Narrow;
+
+}
