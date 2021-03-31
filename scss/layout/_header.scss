@@ -1,0 +1,48 @@
+.header {
+    position: relative ;
+    background-color: #F5F3F0;
+    text-align: center;
+    padding: 4em 2em;
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: inherit;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform-origin: top right;
+        transform: skewY(-4deg);
+    }
+
+    .profile-pics {
+        width: 160px;
+        clip-path: circle();
+       
+    }
+
+
+
+    p {
+        color: $accent-color;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: map-get($font-weights, "regular" );
+        letter-spacing: 2px;
+        
+    }
+
+    .name {
+        font-family: Playfair Display;
+        color: $text-color;
+        font-weight: map-get($font-weights, "bolder" );
+        font-size: 4rem;
+        line-height: 46px;
+    }
+
+    
+}
