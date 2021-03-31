@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
-@import './config';
-@import './normalize';
+@import './base/global';
+@import './base/mixins';
+@import './base/normalize';
+@import './base/variables';
+
+@import './components/buttons';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/responsive';
+
+@import './pages/home';
 
 
