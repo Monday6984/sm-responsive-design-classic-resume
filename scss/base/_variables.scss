@@ -1,12 +1,18 @@
 $primary-color: #0699A6;
 $accent-color: #9E8C6C;
 $text-color: #000000;
-$font-size: 1rem;
+$button-hover: #066169;
+$color-white: #ffffff;
+$body-font-size: 1rem;
+$button-font-size: 0.8rem;
+$hero-text-font: 4rem;
+$sub-title-font-size: 0.7rem;
+$header-color: #F5F3F0;
 $font-weights: (
     "regular" : 400,
     "medium" : 500,
     "bold" : 700,
     "bolder" : 900,
 );
-$font-family-1: PT Sans Narrow;
-$font-family-2: Playfair Display;
+$font-family-primary: 'PT Sans Narrow', sans-serif;
+$font-family-secondary: 'Playfair Display', serif;

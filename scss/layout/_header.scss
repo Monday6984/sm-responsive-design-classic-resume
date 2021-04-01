@@ -1,6 +1,6 @@
 .header {
     position: relative ;
-    background-color: #F5F3F0;
+    background-color: $header-color;
     text-align: center;
     padding: 4em 2em;
 
@@ -19,6 +19,15 @@
         transform: skewY(-4deg);
     }
 
+   .rounded-text {
+       position: absolute;
+       right: 70px;
+       width: 100px;
+       height: 100px;
+       z-index: 1;
+       
+   }
+
     .profile-pics {
         width: 160px;
         clip-path: circle();
@@ -27,20 +36,20 @@
 
 
 
-    p {
+    .sub-title {
         color: $accent-color;
         text-transform: uppercase;
-        font-size: 0.7rem;
+        font-size: $sub-title-font-size;
         font-weight: map-get($font-weights, "regular" );
         letter-spacing: 2px;
         
     }
 
     .name {
-        font-family: Playfair Display;
         color: $text-color;
+        font-family: $font-family-secondary;
         font-weight: map-get($font-weights, "bolder" );
-        font-size: 4rem;
+        font-size: $hero-text-font;
         line-height: 46px;
     }
 
