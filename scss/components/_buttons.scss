@@ -5,11 +5,12 @@
     text-transform: uppercase;
     font-size: $button-font-size;
     font-weight: map-get($font-weights, "bold" );
+    letter-spacing: 2px;
     border: none;
     @include transition-ease;
 
     &:hover {
-        background-color: $button-hover;
+        background-color: $primary-color-100;
     }
 
 }

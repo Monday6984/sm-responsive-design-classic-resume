@@ -1,18 +1,27 @@
+/*** Colors ***/
 $primary-color: #0699A6;
+$primary-color-100: #066169;
 $accent-color: #9E8C6C;
+$accent-color-100: #F5F3F0;
 $text-color: #000000;
-$button-hover: #066169;
 $color-white: #ffffff;
+
+/*** Font Sizes ***/
 $body-font-size: 1rem;
+$title-font-size: 2rem;
 $button-font-size: 0.8rem;
 $hero-text-font: 4rem;
-$sub-title-font-size: 0.7rem;
-$header-color: #F5F3F0;
+$sub-title-font-size: 0.9rem;
+
+/*** Font Weights ***/
 $font-weights: (
     "regular" : 400,
     "medium" : 500,
     "bold" : 700,
     "bolder" : 900,
 );
+
+/*** Font Families ***/
 $font-family-primary: 'PT Sans Narrow', sans-serif;
 $font-family-secondary: 'Playfair Display', serif;
+$spacing: 1em;
