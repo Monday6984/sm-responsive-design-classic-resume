@@ -1,8 +1,9 @@
 body {
     font-family: $font-family-primary;
+    font-size: $body-font-size;
 }
 
-main {
+.container {
     width: 80%;
     margin: 0 auto;
     margin-top: 4em;
@@ -31,17 +32,18 @@ main {
         font-size: $sub-title-font-size;
         font-weight: map-get($font-weights, "bold" );
         letter-spacing: 1px;
-        margin-bottom: $spacing;
+        margin-bottom: 0.4em;
         
     }
 
     .date { 
-        font-size: $button-font-size;
+        font-size: $body-font-size;
         font-weight: map-get($font-weights, "regular" );
     }
 
     .text {
-        margin: 1em 0;
+        margin-top: 1em;
+        margin-bottom: 3em;
     }
 
     #skillsets, #awards, #career-traits, #recent-works {
@@ -53,7 +55,7 @@ main {
     }
 
     #awards p {
-        line-height: 2em;
+        line-height: 1.6em;
     }
 
     #career-traits p {
@@ -74,6 +76,5 @@ main {
        }
         
     }
-
     
 }

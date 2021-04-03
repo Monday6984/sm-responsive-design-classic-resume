@@ -411,14 +411,90 @@ template {
   background-color: #066169;
 }
 
-.header {
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4em;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.container .title {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  font-family: "Playfair Display", serif;
+}
+
+.container .section-divide {
+  width: 50px;
+  height: 10px;
+  background-color: #0699A6;
+  margin: 2em 0;
+}
+
+.container .sub-title {
+  color: #9E8C6C;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.4em;
+}
+
+.container .date {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.container .text {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.container #skillsets, .container #awards, .container #career-traits, .container #recent-works {
+  margin-bottom: 2em;
+}
+
+.container #skillsets p {
+  margin-bottom: 0.5em;
+}
+
+.container #awards p {
+  line-height: 1.6em;
+}
+
+.container #career-traits p {
+  margin-bottom: 1em;
+}
+
+.container #recent-works > p {
+  margin-bottom: 0.5em;
+}
+
+.container #recent-works a {
+  color: #0699A6;
+}
+
+.container #recent-works a:hover {
+  color: #066169;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header {
   position: relative;
   background-color: #F5F3F0;
   text-align: center;
   padding: 4em 2em;
 }
 
-.header::after {
+header::after {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -435,21 +511,14 @@ template {
           transform: skewY(-4deg);
 }
 
-.header .rounded-text {
-  position: absolute;
-  right: 70px;
-  width: 100px;
-  height: 100px;
-  z-index: 1;
-}
-
-.header .profile-pics {
+header .profile-pics {
   width: 160px;
   -webkit-clip-path: circle();
           clip-path: circle();
+  margin: 0 auto;
 }
 
-.header .sub-title {
+header .sub-title {
   color: #9E8C6C;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -457,12 +526,31 @@ template {
   letter-spacing: 2px;
 }
 
-.header .name {
+header h1 span {
   color: #000000;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 4rem;
   line-height: 46px;
+  display: block;
+}
+
+.rounded-text {
+  position: absolute;
+  right: 70px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+.header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer {
@@ -518,77 +606,132 @@ footer a:hover {
   transition: all 0.5s ease-in-out;
 }
 
-body {
-  font-family: "PT Sans Narrow", sans-serif;
+.container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-main {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 4em;
-  font-size: 1rem;
-  line-height: 24px;
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-main .title {
-  text-transform: capitalize;
-  font-size: 2rem;
-  margin-bottom: 0.5em;
-  font-family: "Playfair Display", serif;
+@media screen and (min-width: 768px) {
+  .header-wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .header-wrap .profile-pics {
+    width: 200px;
+  }
+  .header-wrap h1 span {
+    font-size: 6rem;
+    line-height: 76px;
+  }
+  .rounded-text {
+    position: absolute;
+    right: 260px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+  .container {
+    width: 70%;
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
 }
 
-main .section-divide {
-  width: 50px;
-  height: 10px;
-  background-color: #0699A6;
-  margin: 2em 0;
-}
-
-main .sub-title {
-  color: #9E8C6C;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 1em;
-}
-
-main .date {
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-
-main .text {
-  margin: 1em 0;
-}
-
-main #skillsets, main #awards, main #career-traits, main #recent-works {
-  margin-bottom: 1em;
-}
-
-main #skillsets p {
-  margin-bottom: 0.5em;
-}
-
-main #awards p {
-  line-height: 2em;
-}
-
-main #career-traits p {
-  margin-bottom: 1em;
-}
-
-main #recent-works > p {
-  margin-bottom: 0.5em;
-}
-
-main #recent-works a {
-  color: #0699A6;
-}
-
-main #recent-works a:hover {
-  color: #066169;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+@media screen and (min-width: 1024px) {
+  header {
+    text-align: left;
+  }
+  header .header-content {
+    width: 60%;
+    margin-top: 3em;
+  }
+  header .header-content h1 {
+    padding-bottom: 1em;
+  }
+  header .header-content h1 span {
+    font-size: 8rem;
+    line-height: 112px;
+  }
+  header .profile-pics {
+    width: 32%;
+    margin: 0;
+  }
+  .rounded-text {
+    position: absolute;
+    left: 340px;
+    bottom: 100px;
+    width: 152px;
+    height: 152px;
+    z-index: 1;
+  }
+  .header-wrap {
+    width: 85%;
+  }
+  .header-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container {
+    width: 85%;
+    margin-top: 6em;
+    line-height: 30px;
+  }
+  .container .text {
+    margin-top: 0;
+    margin-bottom: 2.5em;
+  }
+  .container-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main {
+    width: 60%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .sidebar {
+    width: 32%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hide {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
