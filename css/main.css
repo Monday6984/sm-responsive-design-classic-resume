@@ -526,6 +526,10 @@ header .sub-title {
   letter-spacing: 2px;
 }
 
+header h1 {
+  padding-bottom: 1em;
+}
+
 header h1 span {
   color: #000000;
   font-family: "Playfair Display", serif;
@@ -673,10 +677,6 @@ footer a:hover {
     font-size: 8rem;
     line-height: 112px;
   }
-  header .profile-pics {
-    width: 32%;
-    margin: 0;
-  }
   .rounded-text {
     position: absolute;
     left: 340px;
@@ -687,6 +687,10 @@ footer a:hover {
   }
   .header-wrap {
     width: 85%;
+  }
+  .header-wrap .profile-pics {
+    width: 32%;
+    margin: 0;
   }
   .header-flex {
     -webkit-box-orient: horizontal;

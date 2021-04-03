@@ -20,6 +20,8 @@
          
        }
 
+     
+
         h1 span {
             font-size: 6rem;
             line-height: 76px;
@@ -43,10 +45,9 @@
 }
 
 @include media-lg {
-
     header {
         text-align: left;
-
+  
         .header-content {
             width: 60%;
             margin-top: 3em;
@@ -63,11 +64,7 @@
            
         }
 
-        .profile-pics {
-            width: 32%;
-            
-            margin: 0;
-        }
+        
     }
 
     .rounded-text {
@@ -81,6 +78,12 @@
     }
     .header-wrap {
         width: 85%;
+
+        .profile-pics {
+            width: 32%;
+            
+            margin: 0;
+        }
       
     }
 
