@@ -46,25 +46,16 @@ body {
         margin-bottom: 3em;
     }
 
-    #skillsets, #awards, #career-traits, #recent-works {
+    .spacing {
         margin-bottom: $spacing;
     }
 
-    #skillsets  p {
-        margin-bottom: 0.5em;
-    }
-
-    #awards p {
-        line-height: 1.6em;
+    li {
+        margin-bottom: 0.35em;
     }
 
     #career-traits p {
         margin-bottom: 1em;
-    }
-
-    #recent-works > p {
-        margin-bottom: 0.5em;
-        
     }
 
     #recent-works a {

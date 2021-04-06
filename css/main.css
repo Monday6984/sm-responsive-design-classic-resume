@@ -457,24 +457,16 @@ body {
   margin-bottom: 3em;
 }
 
-.container #skillsets, .container #awards, .container #career-traits, .container #recent-works {
+.container .spacing {
   margin-bottom: 2em;
 }
 
-.container #skillsets p {
-  margin-bottom: 0.5em;
-}
-
-.container #awards p {
-  line-height: 1.6em;
+.container li {
+  margin-bottom: 0.35em;
 }
 
 .container #career-traits p {
   margin-bottom: 1em;
-}
-
-.container #recent-works > p {
-  margin-bottom: 0.5em;
 }
 
 .container #recent-works a {
