@@ -1,0 +1,79 @@
+body {
+    font-family: $font-family-primary;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4em;
+    font-size: $body-font-size;
+    line-height: 24px;
+    
+
+    .title {
+        text-transform: capitalize;
+        font-size: $title-font-size;
+        margin-bottom: 0.5em;
+        font-family: $font-family-secondary;
+    }
+
+
+    .section-divide {
+        width: 50px;
+        height: 10px;
+        background-color: $primary-color;
+        margin: 2em 0;
+    }
+
+    .sub-title {
+        color: $accent-color;
+        text-transform: uppercase;
+        font-size: $sub-title-font-size;
+        font-weight: map-get($font-weights, "bold" );
+        letter-spacing: 1px;
+        margin-bottom: $spacing;
+        
+    }
+
+    .date { 
+        font-size: $button-font-size;
+        font-weight: map-get($font-weights, "regular" );
+    }
+
+    .text {
+        margin: 1em 0;
+    }
+
+    #skillsets, #awards, #career-traits, #recent-works {
+        margin-bottom: $spacing;
+    }
+
+    #skillsets  p {
+        margin-bottom: 0.5em;
+    }
+
+    #awards p {
+        line-height: 2em;
+    }
+
+    #career-traits p {
+        margin-bottom: 1em;
+    }
+
+    #recent-works > p {
+        margin-bottom: 0.5em;
+        
+    }
+
+    #recent-works a {
+       color: $primary-color;
+       
+       &:hover {
+           color: $primary-color-100;
+           @include transition-ease;
+       }
+        
+    }
+
+    
+}
